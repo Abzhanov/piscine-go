@@ -1,1 +1,2 @@
-curl -s 'https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json' | jq '.[51].name'
+#curl -s 'https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json' | jq '.[51].name'
+ls -l | sed -n 'n;p'
