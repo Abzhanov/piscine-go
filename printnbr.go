@@ -2,7 +2,7 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func PrintNbr(n int) {
+func printnbr(n int) {
 	t := 1
 	if n < 0 {
 		t = -1
@@ -11,12 +11,11 @@ func PrintNbr(n int) {
 	if n != 0 {
 		f := (n / 10) * t
 		if f != 0 {
-			PrintNbr(f)
+			printnbr(f)
 		}
 		k := (n % 10 * t) + '0'
-		z01.PrintRune(rune(k))
+		z01.printrune(rune(k))
 	} else {
 		z01.PrintRune('0')
 	}
-
 }
