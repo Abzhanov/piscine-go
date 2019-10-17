@@ -1,7 +1,7 @@
 package piscine
 
 func StrRev(s string) string {
-	runes := []rune(s) 
+	runes := []rune(s)
 	for i, j := 0, StrLen(s)-1; i < j; i, j = i+1, j-1 {
 		runes[i], runes[j] = runes[j], runes[i]
 	}
