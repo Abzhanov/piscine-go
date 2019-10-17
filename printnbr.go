@@ -10,14 +10,14 @@ func PrintNbr(n int) {
 }
 func SetNbr(n int) {
 	m := '0'
-	if n != 0 {
+	if n == 0 {
 		z01.PrintRune(m)
 		return
 	}
 	for c := 1; c <= n%10; c++ {
 		m++
 	}
-	for c := -1; c <= n%10; c-- {
+	for c := -1; c >= n%10; c-- {
 		m++
 	}
 	if n/10 != 0 {
