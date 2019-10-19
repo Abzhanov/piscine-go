@@ -13,7 +13,7 @@ func BasicAtoi2(s string) int {
 				x = x*10 + j
 			}
 		} else {
-				return 0
+			return 0
 		}
 	}
 	return x
