@@ -3,15 +3,15 @@ package piscine
 func Atoi(str string) int {
 	//strReversed := StrRev(str)
 	x := 0
-	dm := false
+	mm := false
 	if StrLen(str) != 0 {
 		if rune(str[0]) == '-' {
 			for _, y := range []rune(str) {
 				if y == '-' {
-					if dm {
+					if mm {
 						return 0
 					}
-					dm = true
+					mm = true
 					continue
 				} else if y <= '9' && y >= '0' {
 					d := '0'
