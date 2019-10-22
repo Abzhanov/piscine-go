@@ -14,7 +14,7 @@ func Capitalize(s string) string {
 
 		} else if n == false && (x[i] >= 'A' && x[i] <= 'Z') {
 			x[i] = x[i] + 32
-		} else if (x[i] >= '0' && x[i] <= '9') {
+		} else if x[i] >= '0' && x[i] <= '9') {
 			n = false
 		} else {
 			n = true
