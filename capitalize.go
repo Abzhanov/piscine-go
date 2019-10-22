@@ -1,7 +1,7 @@
 package piscine
 
 func Capitalize(s string) string {
-	l := len(s)
+	l := StrLen(s)
 	x := []rune(s)
 	n := true
 	for i := 0; i < l; i++ {
