@@ -5,7 +5,7 @@ func AlphaCount(str string) int {
 	counter := 0
 	for _, i := range a {
 		if 'a' <= i && i <= 'z' || 'A' <= i && i <= 'Z' {
-				counter++
+			counter++
 		}
 	}
 	return counter
