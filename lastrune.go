@@ -2,12 +2,12 @@ package piscine
 
 func LastRune(s string) rune {
 	ar := []rune(s)
-	return ar[lent(ar)-1]
+	return ar[lr(ar)-1]
 }
 
-func lent(a []rune) int {
+func lr(a []rune) int {
 	rev := 0
-	for _, _ = range a {
+	for range a {
 		rev++
 	}
 	return rev
