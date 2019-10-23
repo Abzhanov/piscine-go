@@ -22,7 +22,7 @@ func main() {
 	}
 	for index, item := range x {
 		if index >= 0 {
-			for _, y := range item {
+			for y := range item {
 				z01.PrintRune(y)
 			}
 			z01.PrintRune(10)
