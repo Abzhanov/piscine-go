@@ -9,6 +9,7 @@ func PrintStr(str string) {
 	for _, h := range str {
 		z01.PrintRune(h)
 	}
+	z01.PrintRune(10)
 }
 
 func main() {
