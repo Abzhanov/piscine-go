@@ -7,21 +7,31 @@ import (
 
 func main() {
 	x := os.Args
-	for j := 0; j < len(x)-1; j++ {
-		for i := 0; i < len(x)-1; i++ {
-			if x[i] > x[i+1] {
-				temp := x[i]
-				x[i] = x[i+1]
-				x[i+1] = temp
+	i := 0
+	for range x {
+		i++
+	}
+	name := sortArray(x[1:i])
+	for j := 0; j < (i - 1); j++ {
+		for _, letter := range name[j] {
+			z01.PrintRune(letter)
+		}
+		z01.PrintRune(10)
+	}
+}
+
+func sortArray(str []string) []string {
+	j := 0
+	name := str
+	for range str {
+		j++
+	}
+	for i := 0; i < j; i++ {
+		for k := i + 1; k < j; k++ {
+			if name[i] > name[k] {
+				name[i], name[k] = name[k], name[i]
 			}
 		}
 	}
-	for index, item := range x {
-		if index != 0 {
-			for _, y := range item {
-				z01.PrintRune(y)
-			}
-			z01.PrintRune(10)
-		}
-	}
+	return name
 }
