@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	piscine ".."
+	"os"
 )
 
 func main() {
@@ -12,4 +12,4 @@ func main() {
 			piscine.PrintStr(y)
 		}
 	}
-}	
+}
