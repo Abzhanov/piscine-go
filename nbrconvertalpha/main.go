@@ -34,7 +34,7 @@ func main() {
 		c++
 	}
 	if c >= 2 && arg[1] == "--upper" {
-		pos = 2
+		pos = 3
 		flagupper = true
 	}
 	for index, k := range arg {
@@ -46,7 +46,7 @@ func main() {
 				if !flagupper {
 					z01.PrintRune(rune('a' + num - 1))
 				} else {
-					z01.PrintRune(rune( 'A' + num - 1))
+					z01.PrintRune(rune('A' + num - 1))
 				}
 			}
 		}
