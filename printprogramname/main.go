@@ -4,6 +4,7 @@ import (
 	"github.com/01-edu/z01"
 	"os"
 )
+
 func main() {
 	x := os.Args
 	res := x[0]
