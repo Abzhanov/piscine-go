@@ -46,7 +46,7 @@ func main() {
 				if !flagupper {
 					z01.PrintRune(rune('a' + num - 1))
 				} else {
-					z01.PrintRune(rune('A' + num - 1))
+					z01.PrintRune(rune( 'A' + num - 1))
 				}
 			}
 		}
