@@ -11,4 +11,5 @@ func main() {
 	for _, s := range res {
 		z01.PrintRune(s)
 	}
+	z01.PrintRune(10)
 }
