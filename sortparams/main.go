@@ -24,8 +24,8 @@ func main() {
 		if index != 0 {
 			for _, y := range item {
 				z01.PrintRune(y)
-			}
-			z01.PrintRune(10)
+			}			
 		}
+		z01.PrintRune(10)
 	}
 }
