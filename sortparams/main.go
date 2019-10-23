@@ -21,7 +21,7 @@ func main() {
 		}
 	}
 	for index, item := range x {
-		if index != 0 {
+		if index == 0 {
 			for _, y := range item {
 				z01.PrintRune(y)
 			}
