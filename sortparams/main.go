@@ -11,7 +11,7 @@ func main() {
 	for range x {
 		l++
 	}
-	for j := 0; j < l-1; j++ {
+	for j := 0; j < l; j++ {
 		for i := 0; i < l-1; i++ {
 			if x[i] > x[i+1] {
 				temp := x[i]
@@ -21,8 +21,8 @@ func main() {
 		}
 	}
 	for index, item := range x {
-		if index >= 0 {
-			for y := range item {
+		if index != 0 {
+			for _, y := range item {
 				z01.PrintRune(y)
 			}
 			z01.PrintRune(10)
