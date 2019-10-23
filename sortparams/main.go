@@ -7,12 +7,8 @@ import (
 
 func main() {
 	x := os.Args
-	l := 0
-	for range x {
-		l++
-	}
-	for j := 0; j < l; j++ {
-		for i := 0; i < l-1; i++ {
+	for j := 0; j < len(x)-1; j++ {
+		for i := 0; i < len(x)-1; i++ {
 			if x[i] > x[i+1] {
 				temp := x[i]
 				x[i] = x[i+1]
