@@ -2,7 +2,7 @@ package piscine
 
 func l(d []string) int {
 	m := 0
-	for _, _ = range d {
+	for range d {
 		m++
 	}
 	return m
