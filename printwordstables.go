@@ -12,8 +12,8 @@ func PrintWordsTables(table []string) {
 }
 
 
-
-/*package piscine
+/*
+package piscine
 
 func IsSeparator(c rune) bool {
 	return c == ' ' || c == '\n' || c == '\t'
@@ -46,4 +46,5 @@ func SplitWhiteSpaces(str string) []string {
 		}
 	}
 	return res
-}*/
+}
+*/
