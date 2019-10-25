@@ -1,5 +1,20 @@
 package piscine
 
+import "github.com/01-edu/z01"
+
+func PrintWordsTables(table []string) {
+	for _, word := range table {
+		for _, c := range word {
+			z01.PrintRune(rune(c))
+		}
+		z01.PrintRune(10)
+	}
+}
+
+
+
+/*package piscine
+
 func IsSeparator(c rune) bool {
 	return c == ' ' || c == '\n' || c == '\t'
 }
@@ -31,4 +46,4 @@ func SplitWhiteSpaces(str string) []string {
 		}
 	}
 	return res
-}
+}*/
