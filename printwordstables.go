@@ -11,7 +11,6 @@ func PrintWordsTables(table []string) {
 	}
 }
 
-
 /*
 package piscine
 
